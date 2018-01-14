@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>sd_luciprod_filldistillery</defName>
+    <driverClass>sd_luciprod.JobDriver_sd_luciprod_FillDistillery</driverClass>
+    <reportString>filling TargetA.</reportString>
+	<suspendable>false</suspendable>
+  </JobDef>
+  
+  <JobDef>
+    <defName>sd_luciprod_takelucioutofdistillery</defName>
+    <driverClass>sd_luciprod.JobDriver_sd_luciprod_TakeLuciOutOfDistillery</driverClass>
+    <reportString>taking luciferium out of TargetA.</reportString>
+  </JobDef>
+  
+</Defs>

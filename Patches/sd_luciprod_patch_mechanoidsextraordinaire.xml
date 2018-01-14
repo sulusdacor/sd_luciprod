@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<!--========================= adding mechs =============================-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="sd_luciprod.PatchOperationFindMod">
+				<modName>Mechanoids Extraordinaire</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "sd_luciprod_extract_mechanites_scyther"]/recipeUsers</xpath>
+		<value>
+		  <li>Mechanoid_Vespa</li>  
+		</value>
+	</li>
+			
+			</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="sd_luciprod.PatchOperationFindMod">
+				<modName>Mechanoids Extraordinaire</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "sd_luciprod_extract_mechanites_centipede"]/recipeUsers</xpath>
+		<value>  
+		  <li>Mechanoid_Hound</li>
+		  <li>Mechanoid_Chimera</li>
+		  <li>Mechanoid_Goliath</li>
+		  <li>Mechanoid_Kraken</li>
+		</value>
+	</li>
+			
+			</operations>
+	</Operation>
+
+</Patch>

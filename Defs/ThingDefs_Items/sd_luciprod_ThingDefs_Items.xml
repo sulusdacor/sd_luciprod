@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== luci stuff ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_luciprod_rawlucibatch</defName>
+    <label>raw luciferium batch</label>
+    <description>The raw luciferium batch needs one production step to make luciferium pills at the drub lab.(recipe requires neutroamine)</description>
+    <graphicData>
+      <texPath>sd_luciprod/sd_luciprod_raw_lucibatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+	<stackLimit>400</stackLimit>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <Mass>0.5</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_luciprod_mechanite_oil</defName>
+    <label>mechanite oil</label>
+    <description>This is the mechanite version of human blood. It contains trace amounts of small mechanites which help powering these huge machines from within.</description>
+    <graphicData>
+      <texPath>sd_luciprod/sd_luciprod_mechanite_oil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+	<stackLimit>400</stackLimit>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <Mass>0.5</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	<tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_luciprod_prep_mech_corpse</defName>
+    <label>prepared mechanoid corpse</label>
+    <description>The corpse of a mechanoid prepared for the stasis pod to produce mechanites for the luciferium production. It can be disasssembled at the machining table if not needed.</description>
+    <graphicData>
+      <texPath>sd_luciprod/sd_luciprod_mech_corpse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+	  <Mass>50</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+</Defs>

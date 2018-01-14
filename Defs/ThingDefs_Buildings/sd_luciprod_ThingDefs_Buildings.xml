@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--================================ distillery ======================================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_luciprod_distillery</defName>
+    <label>chemical distillery</label>
+    <thingClass>sd_luciprod.Building_sd_luciprod_distillery</thingClass>
+    <graphicData>
+      <texPath>sd_luciprod/sd_luciprod_distillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+	<castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+	  <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A distillery will turn 10 units of mechanite oil into 5 raw luciferium batches. These are used to produce luciferium pills at the drug lab.</description>
+    <costList>
+      <Steel>30</Steel>
+      <Component>1</Component>
+    </costList>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>100</basePowerConsumption>
+			<startElectricalFires>true</startElectricalFires>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(241,200,160,0)</glowColor>
+		</li>
+		<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-1</minSafeTemperature>
+				<maxSafeTemperature>32</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+		</li>
+    </comps>
+    <researchPrerequisites>
+		<li>sd_luciprod_research_luciprod</li>
+	</researchPrerequisites>
+  </ThingDef>
+  
+  <!--================================ stasis pod ======================================-->
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_luciprod_mechstasispod</defName>
+    <label>mechanoid stasis pod</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A pod designed to keep a mechanoid running and harvest his mechanite oil.</description>
+    <graphicData>
+      <texPath>sd_luciprod/sd_luciprod_stasis_pod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(2.7,1,1.8)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.1,2.4,1.8)</rect>
+      </damageData>
+    </graphicData>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<rotatable>true</rotatable>
+    <costList>
+      <Steel>100</Steel>
+      <Component>2</Component>
+	  <sd_luciprod_mechanite_oil>20</sd_luciprod_mechanite_oil>
+	  <sd_luciprod_prep_mech_corpse>1</sd_luciprod_prep_mech_corpse>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <Mass>500</Mass>
+      <Flammability>0</Flammability>
+      <Cleanliness>-20</Cleanliness>
+    </statBases>
+    <size>(3,2)</size>
+    <designationCategory>Production</designationCategory>
+    <fillPercent>1</fillPercent>
+    <passability>PassThroughOnly</passability>
+	<pathCost>60</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(118,145,157,0)</glowColor>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites>
+		<li>sd_luciprod_research_luciprod</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+</Defs>

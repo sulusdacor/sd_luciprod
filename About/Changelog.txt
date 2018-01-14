@@ -1,0 +1,67 @@
+personal changelog for mod "[sd] luciferium production""
+
+- 24/09/2016
+
+	- released -
+
+- 07/10/2016
+
+	- reduced workamount for pod extraction (9000 -> 3000)
+		(could operate 20 distillerys with 3 pods easly,with no even producing all the time)
+	- added abstract parents to files which missed them (mostly thingdefs)
+	- removed sound+effect working on pod
+	- removed skillrequirement medicine, 10 crafting still  there
+	- changed skilrequirement on druglab table to 7 medicine only (no crafting required), get around 100 exp with no passion if doing this
+	- reduced research cost from 5k to 3k, with crashlanded start it is around 6k,since you start with industrial tech level (was 10k before)
+	- added jobstring in recipe on druglab to show "produce luciferium"
+
+- 23/12/2016
+
+	- updated to 16
+	- added mass to items: corpse 50, oil 0.5, luci batch 0.5
+	- added mass to buildings: distillery 10 (same as fermenting barrel vanilla), stasis pod 500
+	- renamed some def names/ variables in code/xml:	with sd_luciprod all at the start
+							research def from ..._luci to ..._luciprod
+							prepared mech corpse to sd_luciprod_prep_mech_corpse
+							removed most case sensitive def in xmls-> all to lower case
+	- updated code/assemblies to a16
+	- moved research to x 19
+
+	- added designator (like shutdown all) in code/assemblie
+
+- 25/12/2016
+
+	- added menu icon for designator
+
+- 30/12/2016
+
+	- some grammar stuff, lower/upper case fixes
+					
+- 06/01/2017
+
+	- fixed worktobuild xml tag,used old one,that got debug to 1 worktomake = instant build
+
+- 05/06/2017
+
+	- update to a17
+	- added sellprice factor to buildingbase
+	- in code updated somestuff, fixed the empty inspect line in getinspec string
+	- changed luciextract recipe workclass to new recipe_shutdown
+
+- 13/06/2017
+
+	- added designator to take mechanoid oil over the patch operations to the order menue to avoid an issue with stuffed floors mod
+
+- 28/12/2017
+
+	- <Defs> out of msot researchdefs jobdefs and so on.
+	- skillrequirement in recipedefs syntax change to current version, no list
+	- jobdef added suspendable false to fill job
+	- minor code update for b18
+	- switched workspeed from brewing to drugproduction speed for making luci end product
+	- added workgiver for mechanoids
+
+- 06/01/2018
+
+	- added patchoperation findmod
+	- added patch for orions more mechanoids and mechanoids extraordinaire in main mod over patchoperations

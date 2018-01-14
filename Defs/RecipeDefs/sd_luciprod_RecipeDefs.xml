@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+		<defName>sd_luciprod_extract_mechanites_scyther</defName>
+		<label>extract mechanite oil</label>
+		<description>Extract mechanite oil from scyther. yields: 1</description>
+		<workerClass>Recipe_ShutDown</workerClass>
+		<jobString>Extracting.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<addsHediff>ShutDown</addsHediff>
+    <effectWorking>Repair</effectWorking>
+    <isViolation>true</isViolation>
+	<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<products>
+			<sd_luciprod_mechanite_oil>1</sd_luciprod_mechanite_oil>
+		</products>
+		<recipeUsers>
+	      <li>Mechanoid_Scyther</li>
+	    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>sd_luciprod_extract_mechanites_centipede</defName>
+		<label>extract mechanite oil</label>
+		<description>Extract mechanite oil from centipede. yields: 2</description>
+		<workerClass>Recipe_ShutDown</workerClass>
+		<jobString>Extracting.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<addsHediff>ShutDown</addsHediff>
+    <effectWorking>Repair</effectWorking>
+    <isViolation>true</isViolation>
+	<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<products>
+			<sd_luciprod_mechanite_oil>2</sd_luciprod_mechanite_oil>
+		</products>
+		<recipeUsers>
+	      <li>Mechanoid_Centipede</li>
+	    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>sd_luciprod_extract_oil_pod</defName>
+		<label>extract mechanite oil</label>
+		<description>Extract mechanite oil from the pod. yields: 1</description>
+		<jobString>Extracting.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workAmount>3000</workAmount>
+	<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<products>
+			<sd_luciprod_mechanite_oil>1</sd_luciprod_mechanite_oil>
+		</products>
+		<recipeUsers>
+	      <li>sd_luciprod_mechstasispod</li>
+	    </recipeUsers>
+		<researchPrerequisite>sd_luciprod_research_luciprod</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>sd_luciprod_prepare_mech</defName>
+		<label>prepare mechanoid</label>
+		<description>Prepare a mechanoid corpse for the use in your stasis pod. needs: 1 centipde/scyther corpse. yields: 1 prepared corpse</description>
+		<jobString>Preparing.</jobString>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workAmount>10000</workAmount>
+		<effectWorking>ButcherMechanoid</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesMechanoid</li>
+			</categories>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<products>
+			<sd_luciprod_prep_mech_corpse>1</sd_luciprod_prep_mech_corpse>
+		</products>
+		<recipeUsers>
+	      <li>TableMachining</li>
+	    </recipeUsers>
+		<researchPrerequisite>sd_luciprod_research_luciprod</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>sd_luciprod_make_luci</defName>
+		<label>produce luciferium</label>
+		<description>produce 5 luciferium pills out of 10 neutroamine and 10 raw luciferium batches</description>
+		<jobString>Producing Luciferium.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>sd_luciprod_rawlucibatch</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>sd_luciprod_rawlucibatch</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Medicine>7</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<products>
+			<Luciferium>5</Luciferium>
+		</products>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>sd_luciprod_research_luciprod</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>sd_luciprod_disassemble_prepcorpse</defName>
+    <label>disassemble prepared mechanoid corpse</label>
+    <description>Disassembles a prepared mechanoid corpse into its component parts.</description>
+    <jobString>Disassembling mechanoid.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>sd_luciprod_prep_mech_corpse</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+		<products>
+			<Steel>25</Steel>
+			<Plasteel>5</Plasteel>
+			<Component>1</Component>
+		</products>
+	<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+    <fixedIngredientFilter>
+			<thingDefs>
+				<li>sd_luciprod_prep_mech_corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	<recipeUsers>
+	      <li>TableMachining</li>
+	</recipeUsers>
+	<researchPrerequisite>sd_luciprod_research_luciprod</researchPrerequisite>
+  </RecipeDef>
+  		  
+  
+</Defs>

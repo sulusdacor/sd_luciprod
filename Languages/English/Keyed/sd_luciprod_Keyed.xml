@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- distilling process -->
+	<sd_luciprod_txtcontainsrawluci>Contains batch of raw luciferium</sd_luciprod_txtcontainsrawluci>
+	<sd_luciprod_txtcontainsoil>Contains mechanite oil</sd_luciprod_txtcontainsoil>
+	<sd_luciprod_txtdistilled>Distilled</sd_luciprod_txtdistilled>
+	<sd_luciprod_txtdistillingprogress>Distilling progress</sd_luciprod_txtdistillingprogress>
+	<sd_luciprod_txtdistilleryoutofidealtemperature>Distillery out of ideal temperature</sd_luciprod_txtdistilleryoutofidealtemperature>
+	<sd_luciprod_txttemperature>Temperature</sd_luciprod_txttemperature>
+	<sd_luciprod_txtidealdistillingtemperature>Ideal distilling temperature</sd_luciprod_txtidealdistillingtemperature>
+	<sd_luciprod_txtbadtemperature>Bad temperature</sd_luciprod_txtbadtemperature>
+	<sd_luciprod_txtnomechaniteoil>Contains no mechanite oil</sd_luciprod_txtnomechaniteoil>
+	
+</LanguageData>

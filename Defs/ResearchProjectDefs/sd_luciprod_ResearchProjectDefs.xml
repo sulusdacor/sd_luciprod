@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== luci research ===================================-->
+
+  <ResearchProjectDef>
+		<defName>sd_luciprod_research_luciprod</defName>
+		<label>luciferium production</label>
+		<description>Produce luciferium by harvesting mechanoid corpses for traces of mechanites to turn them into luciferium.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tags>
+			<li>Spacer</li>
+		</tags>
+		<prerequisites>
+			<li>DrugProduction</li>
+			<li>MicroelectronicsBasics</li>
+			<li>Machining</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>19</researchViewX>
+	</ResearchProjectDef>
+
+</Defs>
