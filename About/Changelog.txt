@@ -54,6 +54,7 @@ personal changelog for mod "[sd] luciferium production""
 
 - 28/12/2017
 
+	- update to b18
 	- <Defs> out of msot researchdefs jobdefs and so on.
 	- skillrequirement in recipedefs syntax change to current version, no list
 	- jobdef added suspendable false to fill job
@@ -65,3 +66,7 @@ personal changelog for mod "[sd] luciferium production""
 
 	- added patchoperation findmod
 	- added patch for orions more mechanoids and mechanoids extraordinaire in main mod over patchoperations
+
+- 15/01/2018
+
+	- added modsync
