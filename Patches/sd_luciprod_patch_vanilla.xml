@@ -9,5 +9,14 @@
 		  <li>sd_luciprod.Designator_sd_luciprod_ExtractOil</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "ButcherCorpseMechanoid"]</xpath>
+		<value>
+			<products>
+				<sd_luciprod_mechanite_oil>1</sd_luciprod_mechanite_oil>
+			</products>
+		</value>
+	</Operation>
 
 </Patch>

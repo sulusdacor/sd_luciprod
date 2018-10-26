@@ -70,3 +70,10 @@ personal changelog for mod "[sd] luciferium production""
 - 15/01/2018
 
 	- added modsync
+
+- 26/10/2018
+
+	- rimworld 1.0 update
+	- assembly update,mostly some stuff that was renamed
+	- xml updates
+	- changed oil to be a side product of disassembly of mechs (since shut down was removed)

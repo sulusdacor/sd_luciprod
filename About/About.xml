@@ -2,15 +2,16 @@
 <ModMetaData>
   <name>[sd] luciferium production</name>
   <author>sulusdacor</author>
-  <targetVersion>0.18.1722</targetVersion>
+  <targetVersion>1.0.2059</targetVersion>
   <url>https://ludeon.com/forums/index.php?topic=26276.0</url>
 	<description>"luciferium production"
+	Ver.: 1.0-1.0.0
 	
 	"These mechanoids could be the devil's spawn" - one colonist said and a crazy scientist started researching^^
 	
 	- adds a way to produce luciferium
 	- needs research to build/produce/start, recipes need pawns with 10 crafting (extracting) and 7 medicine (medicine just for recipe on druglab)
-	- how to get: kill mechs, get mech oil from them, distille it to raw luciferium batches, make luciferium with neutroamine at druglab
+	- how to get: kill mechs, get mech oil from them (sideproduct of disassembly), distille it to raw luciferium batches, make luciferium with neutroamine at druglab
 	- can build a stasis pod to extract mech oil
 	- all stuff can be traded (exotic goods traders)
 	

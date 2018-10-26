@@ -9,9 +9,6 @@
 		<description>Produce luciferium by harvesting mechanoid corpses for traces of mechanites to turn them into luciferium.</description>
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
-		<tags>
-			<li>Spacer</li>
-		</tags>
 		<prerequisites>
 			<li>DrugProduction</li>
 			<li>MicroelectronicsBasics</li>

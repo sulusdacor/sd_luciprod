@@ -14,7 +14,10 @@
         <rect>(0.05,0.1,0.9,0.9)</rect>
       </damageData>
     </graphicData>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
 	<castEdgeShadows>true</castEdgeShadows>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -29,7 +32,7 @@
     <description>A distillery will turn 10 units of mechanite oil into 5 raw luciferium batches. These are used to produce luciferium pills at the drug lab.</description>
     <costList>
       <Steel>30</Steel>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
@@ -39,7 +42,7 @@
 		<li Class="CompProperties_Power">
 			<compClass>CompPowerTrader</compClass>
 			<basePowerConsumption>100</basePowerConsumption>
-			<startElectricalFires>true</startElectricalFires>
+			<shortCircuitInRain>true</shortCircuitInRain>
 		</li>
 		<li Class="CompProperties_Flickable"/>
 		<li Class="CompProperties_Glower">
@@ -76,11 +79,14 @@
         <rect>(0.3,0.1,2.4,1.8)</rect>
       </damageData>
     </graphicData>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
 	<rotatable>true</rotatable>
     <costList>
       <Steel>100</Steel>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
 	  <sd_luciprod_mechanite_oil>20</sd_luciprod_mechanite_oil>
 	  <sd_luciprod_prep_mech_corpse>1</sd_luciprod_prep_mech_corpse>
     </costList>
@@ -108,7 +114,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>2500</basePowerConsumption>
-        <startElectricalFires>true</startElectricalFires>
+        <shortCircuitInRain>true</shortCircuitInRain>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">

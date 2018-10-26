@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!--============ 
   <RecipeDef>
 		<defName>sd_luciprod_extract_mechanites_scyther</defName>
 		<label>extract mechanite oil</label>
 		<description>Extract mechanite oil from scyther. yields: 1</description>
-		<workerClass>Recipe_ShutDown</workerClass>
+		<workerClass>Recipe_ExecuteByCut</workerClass>
 		<jobString>Extracting.</jobString>
 		<workAmount>2000</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
-		<addsHediff>ShutDown</addsHediff>
     <effectWorking>Repair</effectWorking>
     <isViolation>true</isViolation>
 	<skillRequirements>
@@ -20,7 +20,8 @@
 			<sd_luciprod_mechanite_oil>1</sd_luciprod_mechanite_oil>
 		</products>
 		<recipeUsers>
-	      <li>Mechanoid_Scyther</li>
+	      <li>Mech_Scyther</li>
+		  <li>Mech_Lancer</li>
 	    </recipeUsers>
   </RecipeDef>
   
@@ -28,11 +29,10 @@
 		<defName>sd_luciprod_extract_mechanites_centipede</defName>
 		<label>extract mechanite oil</label>
 		<description>Extract mechanite oil from centipede. yields: 2</description>
-		<workerClass>Recipe_ShutDown</workerClass>
+		<workerClass>Recipe_ExecuteByCut</workerClass>
 		<jobString>Extracting.</jobString>
 		<workAmount>2000</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
-		<addsHediff>ShutDown</addsHediff>
     <effectWorking>Repair</effectWorking>
     <isViolation>true</isViolation>
 	<skillRequirements>
@@ -43,10 +43,10 @@
 			<sd_luciprod_mechanite_oil>2</sd_luciprod_mechanite_oil>
 		</products>
 		<recipeUsers>
-	      <li>Mechanoid_Centipede</li>
+	      <li>Mech_Centipede</li>
 	    </recipeUsers>
   </RecipeDef>
-  
+====-->
   <RecipeDef>
 		<defName>sd_luciprod_extract_oil_pod</defName>
 		<label>extract mechanite oil</label>
@@ -110,7 +110,7 @@
 		<description>produce 5 luciferium pills out of 10 neutroamine and 10 raw luciferium batches</description>
 		<jobString>Producing Luciferium.</jobString>
 		<workAmount>1000</workAmount>
-		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
@@ -174,7 +174,7 @@
 		<products>
 			<Steel>25</Steel>
 			<Plasteel>5</Plasteel>
-			<Component>1</Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</products>
 	<skillRequirements>
 			<Crafting>10</Crafting>
