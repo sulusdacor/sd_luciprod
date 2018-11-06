@@ -77,3 +77,9 @@ personal changelog for mod "[sd] luciferium production""
 	- assembly update,mostly some stuff that was renamed
 	- xml updates
 	- changed oil to be a side product of disassembly of mechs (since shut down was removed)
+
+- 06/11/2018
+
+	- removed the designator, since the recipe is not needed anymore
+	- added spanish and spanishlatin by CANALETA
+	- german by me
